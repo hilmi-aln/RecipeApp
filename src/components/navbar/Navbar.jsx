@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <Nav>
       <Logo to="/home">
-        <i>{"<Clarusway>"}</i>
+        <i>{"<Application>"}</i>
         <span>recipe</span>
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
@@ -23,10 +23,7 @@ const Navbar = () => {
         </MenuLink>
         <MenuLink
           onClick={() =>
-            setGithub(
-              (window.location.href =
-                "https://github.com/hilmi-aln")
-            )
+            setGithub((window.location.href = "https://github.com/hilmi-aln"))
           }
           to={github}
           target="_blank"
